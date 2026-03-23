@@ -372,57 +372,65 @@
       html, body { overflow: hidden; }
       .page { padding: 18px 18px 28px; justify-content: center; gap: 0; }
 
-      .hdr { margin-bottom: 12px; }
-      .hdr-txt { font-size: 8px; letter-spacing: .38em; }
-      .hdr-line { max-width: 36px; }
+      .hdr { margin-bottom: 13px; }
+      .hdr-txt { font-size: 9px; letter-spacing: .38em; }
+      .hdr-line { max-width: 38px; }
 
-      /* Logo BIG */
-      .logo-outer { width: 104px; height: 104px; }
-      .bull-tag { margin-top: 11px; font-size: 9.5px; padding: 4px 13px; letter-spacing: .32em; }
+      /* Logo BIGGER on phone */
+      .logo-outer { width: 112px; height: 112px; }
+      .bull-tag { margin-top: 13px; font-size: 10px; padding: 5px 15px; letter-spacing: .32em; }
 
-      .title-wrap { margin-top: 13px; }
-      .pre-title { font-size: 7.5px; letter-spacing: .26em; margin-bottom: 4px; }
-      h1 { font-size: clamp(24px, 6.5vw, 30px); }
-      .tagline { font-size: 10.5px; margin-top: 5px; line-height: 1.58; }
+      .title-wrap { margin-top: 14px; }
+      .pre-title { font-size: 8px; letter-spacing: .26em; margin-bottom: 5px; }
+      h1 { font-size: clamp(26px, 7vw, 32px); letter-spacing: .06em; }
+      .tagline { font-size: 11px; margin-top: 6px; line-height: 1.6; }
 
-      .acc-banner { margin-top: 12px; padding: 8px 16px; gap: 8px; }
-      .acc-pct { font-size: 28px; }
-      .acc-txt b { font-size: 12px; }
-      .acc-txt span { font-size: 9.5px; }
-      .acc-div { height: 28px; }
+      .acc-banner { margin-top: 13px; padding: 10px 18px; gap: 10px; border-radius: 11px; }
+      .acc-pct { font-size: 32px; }
+      .acc-txt b { font-size: 13px; }
+      .acc-txt span { font-size: 10px; }
+      .acc-div { height: 32px; }
 
-      .ticker-row { margin-top: 12px; gap: 5px; }
-      .ti { font-size: 9.5px; padding: 5px 8px; gap: 4px; }
+      .ticker-row { margin-top: 13px; gap: 6px; }
+      .ti { font-size: 10px; padding: 6px 9px; gap: 5px; border-radius: 6px; }
 
-      .stats { gap: 16px; margin-top: 12px; }
-      .sv { font-size: 20px; }
-      .sl { font-size: 7.5px; margin-top: 2px; }
+      .stats { gap: 18px; margin-top: 13px; }
+      .sv { font-size: 22px; }
+      .sl { font-size: 8px; margin-top: 3px; }
 
-      .cards { gap: 6px; margin-top: 12px; max-width: 100%; }
-      .card { padding: 9px 3px; border-radius: 8px; }
-      .ci { font-size: 17px; margin-bottom: 3px; }
-      .cl { font-size: 7.5px; }
+      .cards { gap: 7px; margin-top: 13px; max-width: 100%; }
+      .card { padding: 11px 4px; border-radius: 9px; }
+      .ci { font-size: 20px; margin-bottom: 4px; }
+      .cl { font-size: 8px; }
 
-      .cta-wrap { margin-top: 14px; max-width: 100%; padding: 0 2px; }
-      .btn { font-size: 13px; padding: 14px 16px; letter-spacing: .1em; border-radius: 8px; border-width: 2px; }
+      .cta-wrap { margin-top: 15px; max-width: 100%; padding: 0 2px; }
+      .btn { font-size: 13.5px; padding: 15px 18px; letter-spacing: .1em; border-radius: 9px; border-width: 2px; }
+
+      /* Grid texture more visible on phone */
+      .grid {
+        background-image:
+          linear-gradient(rgba(0,229,255,0.07) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0,229,255,0.07) 1px, transparent 1px);
+        background-size: 34px 34px;
+      }
 
       .credit { font-size: 10px; bottom: 7px; }
     }
 
     @media (max-width: 370px) {
-      .logo-outer { width: 88px; height: 88px; }
-      h1 { font-size: 22px; }
-      .acc-pct { font-size: 24px; }
-      .sv { font-size: 17px; }
-      .stats { gap: 12px; margin-top: 10px; }
-      .cards { margin-top: 10px; gap: 5px; }
-      .cta-wrap { margin-top: 12px; }
-      .btn { font-size: 12px; padding: 12px 13px; }
-      .ticker-row { margin-top: 10px; }
-      .ti { font-size: 9px; padding: 4px 6px; }
-      .acc-banner { margin-top: 10px; }
-      .title-wrap { margin-top: 11px; }
-      .bull-tag { font-size: 8.5px; padding: 3px 11px; margin-top: 9px; }
+      .logo-outer { width: 94px; height: 94px; }
+      h1 { font-size: 24px; }
+      .acc-pct { font-size: 26px; }
+      .sv { font-size: 19px; }
+      .stats { gap: 13px; margin-top: 11px; }
+      .cards { margin-top: 11px; gap: 5px; }
+      .cta-wrap { margin-top: 13px; }
+      .btn { font-size: 12.5px; padding: 13px 13px; }
+      .ticker-row { margin-top: 11px; }
+      .ti { font-size: 9.5px; padding: 5px 7px; }
+      .acc-banner { margin-top: 11px; }
+      .title-wrap { margin-top: 12px; }
+      .bull-tag { font-size: 9px; padding: 3px 12px; margin-top: 10px; }
     }
 
     /* ════════════════════════════════════
@@ -519,12 +527,14 @@
 
   <main class="page">
 
-    <!-- Header -->
-    <div class="hdr">
-      <div class="hdr-line"></div>
-      <div class="hdr-txt">🐂 &nbsp; Bull Market Expert &nbsp; 🐂</div>
-      <div class="hdr-line"></div>
-    </div>
+    <!-- Header — linked -->
+    <a href="https://t.me/+r95mnm__e-MzZTRl" target="_blank" rel="noopener" style="text-decoration:none;">
+      <div class="hdr">
+        <div class="hdr-line"></div>
+        <div class="hdr-txt">🐂 &nbsp; Bull Market Expert &nbsp; 🐂</div>
+        <div class="hdr-line"></div>
+      </div>
+    </a>
 
     <!-- Logo — linked -->
     <a href="https://t.me/+r95mnm__e-MzZTRl" target="_blank" rel="noopener" class="logo-link">
@@ -548,26 +558,34 @@
       </div>
     </a>
 
-    <!-- Title -->
-    <div class="title-wrap">
-      <div class="pre-title">— Elite Stock Market Analysis —</div>
-      <h1><span class="b">BULL</span> <span class="e">TRADE</span> EXPERT</h1>
-      <p class="tagline">
-        <span class="hi">Expert Analysis</span> · Own Views · <span class="hi2">Consult Your Advisor</span><br/>
-        Trade Smart — Grow Your Portfolio Every Day
-      </p>
-    </div>
+    <!-- Title — linked -->
+    <a href="https://t.me/+r95mnm__e-MzZTRl" target="_blank" rel="noopener" style="text-decoration:none;width:100%;">
+      <div class="title-wrap">
+        <div class="pre-title">— Elite Stock Market Analysis —</div>
+        <h1><span class="b">BULL</span> <span class="e">TRADE</span> EXPERT</h1>
+        <p class="tagline">
+          <span class="hi">Expert Analysis</span> · Own Views · <span class="hi2">Consult Your Advisor</span><br/>
+          Trade Smart — Grow Your Portfolio Every Day
+        </p>
+      </div>
+    </a>
 
  
 
-    <!-- Live Ticker -->
+    <!-- Live Ticker — linked -->
     <div class="ticker-row">
-      <div class="ti"><div class="tdot g"></div><span class="tl">NIFTY</span>&nbsp;<span class="tv g">▲ 0.74%</span></div>
-      <div class="ti"><div class="tdot r"></div><span class="tl">BANK</span>&nbsp;<span class="tv r">▼ 0.32%</span></div>
-      <div class="ti"><div class="tdot g"></div><span class="tl">SENSEX</span>&nbsp;<span class="tv g">▲ 0.61%</span></div>
+      <a href="https://t.me/+r95mnm__e-MzZTRl" target="_blank" rel="noopener" style="text-decoration:none;">
+        <div class="ti"><div class="tdot g"></div><span class="tl">NIFTY</span>&nbsp;<span class="tv g">▲ 0.74%</span></div>
+      </a>
+      <a href="https://t.me/+r95mnm__e-MzZTRl" target="_blank" rel="noopener" style="text-decoration:none;">
+        <div class="ti"><div class="tdot r"></div><span class="tl">BANK</span>&nbsp;<span class="tv r">▼ 0.32%</span></div>
+      </a>
+      <a href="https://t.me/+r95mnm__e-MzZTRl" target="_blank" rel="noopener" style="text-decoration:none;">
+        <div class="ti"><div class="tdot g"></div><span class="tl">SENSEX</span>&nbsp;<span class="tv g">▲ 0.61%</span></div>
+      </a>
     </div>
 
-
+   
     <!-- Feature Cards — linked -->
     <div class="cards">
       <a href="https://t.me/+r95mnm__e-MzZTRl" target="_blank" rel="noopener" class="card">
